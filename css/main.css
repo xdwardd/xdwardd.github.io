@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand") ;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+	background: #181818;
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	line-height: 1.9rem;
+	overflow: hidden;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+#left{
+
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: 100;
+	align-items: center;
+	justify-content: center;
+}
+
+#signin{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+#signin .logo{
+	margin-top: 6vh;
+	margin:auto;
+}
+#signin .logo img{
+
+	height: 200px;
+	
+}
+#signin form{
+	width: 80%;
+	padding-bottom: 2.5rem;
+}
+
+#signin label{
+	font-size:  0.9rem;
+	font-weight: 300;
+
+
+}
+
+#signin .text-input{
+	display: block;
+	width: 100%;
+	background: #181818;
+	border: 1px solid #555;
+	border-radius: 2px;
+	height: 1.8rem;
+	color: #fff;
+	padding: 0.7rem 1rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+#signin .or, .line{
+	width: 60%;
+	margin: auto;
+}
+.primary-btn{
+	display: block;
+	width: 100%;
+	background: teal;
+	color: #fff;
+	border: none;
+	font-size: 1rem;
+	border-radius: 2px;
+	height: 2rem;
+	cursor: pointer;
+	transition: all 0.5s;
+	text-align: center;
+	text-decoration: none;
+
+}
+.primary-btn:hover{
+	opacity: 75%;
+}
+
+#signin .links a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 2vh;
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+}
+
+#signin .links a:hover{
+ color: teal;
+}
+#signin .or{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 2vh;
+}
+#signin .or, .line{
+	flex: auto;
+	color: #fff;
+}
+
+#signin .or span{
+	padding: 0 0.8rem;
+}
+
+.secondary-btn{
+	display: block;
+	width: 60%;
+	background: teal;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	font-size: 1rem;
+	border-radius: 2px;
+	padding: 0.6rem 0;
+	cursor: pointer;
+	transition: all 0.5s;
+
+}
+
+.secondary-btn:hover{
+	opacity: 75%;
+}
+
+.footer{
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.footer p{
+	font-size: 0.9rem;
+	margin-top: 2vh;
+}
+
+.footer a{
+	font-size: 0.9rem;
+	color: teal;
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+	margin-bottom: 1rem;
+
+}
+.footer a:hover{
+	color: #fff;
+
+}
+#right{
+	display: flex;
+	flex: 2;
+	flex-direction: column;
+}
+	
+
+#letscode{
+	display: flex;
+	flex-direction: column;
+	background-image: url(../img/pic3.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+#letscode .code-text{
+	font-size: 3rem;
+	width: 100%;
+	margin-bottom: 3rem;
+
+}
+.right-btn{
+	display: block;
+	width: 100%;
+	background: teal;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	font-size: 1rem;
+	border-radius: 2px;
+	padding: 0.6rem 0;
+	cursor: pointer;
+	transition: all 0.5s;
+
+}
+.right-btn:hover{
+	opacity: 50%;
+}
+@media(min-width: 1200px){
+	#left{
+		flex: 4;
+	}
+
+	#right{
+		flex: 6;
+	}
+}
+
+@media (max-width: 760px){
+	#right{
+		display: none;
+	}
+}
